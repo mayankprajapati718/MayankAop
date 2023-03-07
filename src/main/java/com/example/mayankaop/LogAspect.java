@@ -12,6 +12,7 @@ public class LogAspect {private Logger logger=Logger.getLogger(LogAspect.class.g
     public void log(ProceedingJoinPoint joinPoint) throws Throwable{
         joinPoint.proceed();
         logger.info("login method was executed");
+
         }
 
     }
